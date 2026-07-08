@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="seq_stock_in" model="ir.sequence">
+        <field name="name">Stock In</field>
+        <field name="code">inventory.stock.in</field>
+        <field name="prefix">IN/</field>
+        <field name="padding">5</field>
+    </record>
+
+    <record id="seq_stock_out" model="ir.sequence">
+        <field name="name">Stock Out</field>
+        <field name="code">inventory.stock.out</field>
+        <field name="prefix">OUT/</field>
+        <field name="padding">5</field>
+    </record>
+
+</odoo>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Root Menu -->
+    <menuitem
+        id="menu_inventory_root"
+        name="Inventory Management"
+        sequence="10"/>
+
+
+    <!-- =========================
+            REPORT
+    ========================= -->
+
+    <menuitem
+        id="menu_inventory_report"
+        name="Report"
+        parent="menu_inventory_root"
+        sequence="1"/>
+
+    <menuitem
+        id="menu_inventory_product_report"
+        name="Product Report"
+        parent="menu_inventory_report"
+        action="action_inventory_product"
+        sequence="1"/>
+
+    <menuitem
+        id="menu_inventory_stock_in_report"
+        name="Stock In Report"
+        parent="menu_inventory_report"
+        action="action_stock_in"
+        sequence="2"/>
+
+    <menuitem
+        id="menu_inventory_stock_out_report"
+        name="Stock Out Report"
+        parent="menu_inventory_report"
+        action="action_stock_out"
+        sequence="3"/>
+
+    <!-- Master -->
+    <menuitem
+        id="menu_inventory_master"
+        name="Master"
+        parent="menu_inventory_root"
+        sequence="2"/>
+
+    <!-- Category -->
+    <menuitem
+        id="menu_inventory_category"
+        name="Category"
+        parent="menu_inventory_master"
+        action="action_inventory_category"
+        sequence="1"/>
+
+    <!-- Product -->
+    <menuitem
+        id="menu_inventory_product"
+        name="Product"
+        parent="menu_inventory_master"
+        action="action_inventory_product"
+        sequence="2"/>
+
+    <!-- Transaction -->
+    <menuitem
+        id="menu_inventory_transaction"
+        name="Transaction"
+        parent="menu_inventory_root"
+        sequence="3"/>
+
+    <!-- Stock In -->
+    <menuitem
+        id="menu_inventory_stock_in"
+        name="Stock In"
+        parent="menu_inventory_transaction"
+        action="action_stock_in"
+        sequence="1"/>
+
+    <menuitem
+        id="menu_inventory_stock_out"
+        name="Stock Out"
+        parent="menu_inventory_transaction"
+        action="action_stock_out"
+        sequence="2"/>
+
+</odoo>
